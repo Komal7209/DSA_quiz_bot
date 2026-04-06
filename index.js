@@ -107,4 +107,3 @@ if (require.main === module) {
 
 module.exports = app;
 
-// Made with Bob

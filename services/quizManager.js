@@ -213,4 +213,4 @@ class QuizManager {
 // Export singleton instance
 module.exports = new QuizManager();
 
-// Made with Bob
+ 
