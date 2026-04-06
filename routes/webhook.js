@@ -12,7 +12,10 @@ router.post('/sms', async (req, res) => {
     const { From, To, Body, MessageSid } = req.body;
     
     // Validate Twilio webhook signature for security (optional but recommended)
-    if (process.env.NODE_ENV === 'production') {
+    // Temporarily disabled for testing - ENABLE THIS IN PRODUCTION!
+    // const skipValidation = req.query.test === 'true';
+    
+    if (process.env.NODE_ENV === 'production'){ //&& !skipValidation) {
       const signature = req.headers['x-twilio-signature'];
       const url = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
       
