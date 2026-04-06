@@ -1,0 +1,30 @@
+{
+  "name": "dsa-quiz-bot",
+  "version": "1.0.0",
+  "description": "Real-time DSA Quiz Bot using Twilio SMS API and Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node test/testBot.js"
+  },
+  "keywords": [
+    "twilio",
+    "sms",
+    "quiz",
+    "dsa",
+    "data-structures",
+    "algorithms",
+    "bot",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "twilio": "^5.13.1"
+  }
+}
